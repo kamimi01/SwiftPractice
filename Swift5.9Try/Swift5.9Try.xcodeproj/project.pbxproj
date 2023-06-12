@@ -12,6 +12,7 @@
 		D4A7E6532A314DF300145FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A7E6522A314DF300145FD0 /* Assets.xcassets */; };
 		D4A7E6562A314DF300145FD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A7E6552A314DF300145FD0 /* Preview Assets.xcassets */; };
 		D4A7E65E2A32894E00145FD0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7E65D2A32894E00145FD0 /* WebView.swift */; };
+		D4A7E6622A368B3A00145FD0 /* AppInfoList in Frameworks */ = {isa = PBXBuildFile; productRef = D4A7E6612A368B3A00145FD0 /* AppInfoList */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D4A7E6552A314DF300145FD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D4A7E65C2A31535700145FD0 /* Swift5-9Try-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swift5-9Try-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D4A7E65D2A32894E00145FD0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D4A7E65F2A35CD6400145FD0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A7E6622A368B3A00145FD0 /* AppInfoList in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 			children = (
 				D4A7E65C2A31535700145FD0 /* Swift5-9Try-Info.plist */,
 				D4A7E64E2A314DF000145FD0 /* Swift5_9TryApp.swift */,
+				D4A7E65F2A35CD6400145FD0 /* PrivacyInfo.xcprivacy */,
 				D4A7E6502A314DF000145FD0 /* ContentView.swift */,
 				D4A7E6522A314DF300145FD0 /* Assets.xcassets */,
 				D4A7E6542A314DF300145FD0 /* Preview Content */,
@@ -88,6 +92,9 @@
 			dependencies = (
 			);
 			name = Swift5.9Try;
+			packageProductDependencies = (
+				D4A7E6612A368B3A00145FD0 /* AppInfoList */,
+			);
 			productName = Swift5.9Try;
 			productReference = D4A7E64B2A314DF000145FD0 /* Swift5.9Try.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +123,9 @@
 				Base,
 			);
 			mainGroup = D4A7E6422A314DF000145FD0;
+			packageReferences = (
+				D4A7E6602A368B3A00145FD0 /* XCRemoteSwiftPackageReference "AppInfoList" */,
+			);
 			productRefGroup = D4A7E64C2A314DF000145FD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4A7E6602A368B3A00145FD0 /* XCRemoteSwiftPackageReference "AppInfoList" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kamimi01/AppInfoList.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4A7E6612A368B3A00145FD0 /* AppInfoList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4A7E6602A368B3A00145FD0 /* XCRemoteSwiftPackageReference "AppInfoList" */;
+			productName = AppInfoList;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4A7E6432A314DF000145FD0 /* Project object */;
 }
