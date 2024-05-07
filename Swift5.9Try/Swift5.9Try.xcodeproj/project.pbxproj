@@ -12,7 +12,9 @@
 		D4A7E6532A314DF300145FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A7E6522A314DF300145FD0 /* Assets.xcassets */; };
 		D4A7E6562A314DF300145FD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A7E6552A314DF300145FD0 /* Preview Assets.xcassets */; };
 		D4A7E65E2A32894E00145FD0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7E65D2A32894E00145FD0 /* WebView.swift */; };
-		D4A7E6622A368B3A00145FD0 /* AppInfoList in Frameworks */ = {isa = PBXBuildFile; productRef = D4A7E6612A368B3A00145FD0 /* AppInfoList */; };
+		D4A7E6812A37C9D600145FD0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D4A7E65F2A35CD6400145FD0 /* PrivacyInfo.xcprivacy */; };
+		D4A7E6A02A3A981500145FD0 /* TestXCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = D4A7E69F2A3A981500145FD0 /* TestXCFramework */; };
+		D4FC2F352A8C83F000B86B15 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC2F342A8C83F000B86B15 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		D4A7E65C2A31535700145FD0 /* Swift5-9Try-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swift5-9Try-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D4A7E65D2A32894E00145FD0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D4A7E65F2A35CD6400145FD0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D4FC2F342A8C83F000B86B15 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A7E6622A368B3A00145FD0 /* AppInfoList in Frameworks */,
+				D4A7E6A02A3A981500145FD0 /* TestXCFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		D4A7E6422A314DF000145FD0 = {
 			isa = PBXGroup;
 			children = (
+				D4A7E6792A37225200145FD0 /* Framework */,
 				D4A7E64D2A314DF000145FD0 /* Swift5.9Try */,
 				D4A7E64C2A314DF000145FD0 /* Products */,
 			);
@@ -64,6 +68,7 @@
 				D4A7E6522A314DF300145FD0 /* Assets.xcassets */,
 				D4A7E6542A314DF300145FD0 /* Preview Content */,
 				D4A7E65D2A32894E00145FD0 /* WebView.swift */,
+				D4FC2F342A8C83F000B86B15 /* ViewModel.swift */,
 			);
 			path = Swift5.9Try;
 			sourceTree = "<group>";
@@ -74,6 +79,13 @@
 				D4A7E6552A314DF300145FD0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4A7E6792A37225200145FD0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +105,7 @@
 			);
 			name = Swift5.9Try;
 			packageProductDependencies = (
-				D4A7E6612A368B3A00145FD0 /* AppInfoList */,
+				D4A7E69F2A3A981500145FD0 /* TestXCFramework */,
 			);
 			productName = Swift5.9Try;
 			productReference = D4A7E64B2A314DF000145FD0 /* Swift5.9Try.app */;
@@ -124,7 +136,7 @@
 			);
 			mainGroup = D4A7E6422A314DF000145FD0;
 			packageReferences = (
-				D4A7E6602A368B3A00145FD0 /* XCRemoteSwiftPackageReference "AppInfoList" */,
+				D4A7E69E2A3A981500145FD0 /* XCRemoteSwiftPackageReference "SwiftPMWithBinary" */,
 			);
 			productRefGroup = D4A7E64C2A314DF000145FD0 /* Products */;
 			projectDirPath = "";
@@ -140,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A7E6812A37C9D600145FD0 /* PrivacyInfo.xcprivacy in Resources */,
 				D4A7E6562A314DF300145FD0 /* Preview Assets.xcassets in Resources */,
 				D4A7E6532A314DF300145FD0 /* Assets.xcassets in Resources */,
 			);
@@ -154,6 +167,7 @@
 			files = (
 				D4A7E65E2A32894E00145FD0 /* WebView.swift in Sources */,
 				D4A7E6512A314DF000145FD0 /* ContentView.swift in Sources */,
+				D4FC2F352A8C83F000B86B15 /* ViewModel.swift in Sources */,
 				D4A7E64F2A314DF000145FD0 /* Swift5_9TryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,21 +378,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D4A7E6602A368B3A00145FD0 /* XCRemoteSwiftPackageReference "AppInfoList" */ = {
+		D4A7E69E2A3A981500145FD0 /* XCRemoteSwiftPackageReference "SwiftPMWithBinary" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kamimi01/AppInfoList.git";
+			repositoryURL = "https://github.com/kamimi01/SwiftPMWithBinary.git";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D4A7E6612A368B3A00145FD0 /* AppInfoList */ = {
+		D4A7E69F2A3A981500145FD0 /* TestXCFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D4A7E6602A368B3A00145FD0 /* XCRemoteSwiftPackageReference "AppInfoList" */;
-			productName = AppInfoList;
+			package = D4A7E69E2A3A981500145FD0 /* XCRemoteSwiftPackageReference "SwiftPMWithBinary" */;
+			productName = TestXCFramework;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

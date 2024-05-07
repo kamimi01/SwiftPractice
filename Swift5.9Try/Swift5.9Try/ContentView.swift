@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import TestXCFramework
 
 struct ContentView: View {
+    @ObservedObject private var viewModel = ViewModel()
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,8 +24,18 @@ struct ContentView: View {
                         endPoint: .bottom
                     )
                 )
+            Button(action: {
+                let ore = TestXCFramework.Ore()
+                ore.oreMethod()
+            }) {
+                Text("テストボタン")
+            }
+
         }
         .padding()
+        .onAppear {
+            viewModel.onAppear()
+        }
     }
 }
 
